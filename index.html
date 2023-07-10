@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Mario Party</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/estilos.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <img class="logo" src="./src/imagens/logo.png" alt="Logo X-Men">
+    </header>
+
+    <main class="selecao-de-personagens">
+        <section class="personagens">
+            <h1 class="título">Selecione um personagem</h1>
+            <ul class="lista-de-personagens">
+                <li class="personagem selecionado" id="Mario" data-name="Mario" data-description="Alegre. Inspirador. Saltitante. Todo mundo ama o Mario - e por um bom motivo!">
+                    <img src="./src/imagens/100px-SMP_Icon_Mario.png" alt="Personagem Mario">
+                </li>
+                <li class="personagem" id="Luigi" data-name="Luigi" data-description="Mais alto que seu irmão. Divide o bigode ao meio.">
+                    <img src="./src/imagens/100px-SMP_Icon_Luigi.png" alt="Personagem Luigi">
+                </li>
+                <li class="personagem" id="Peach" data-name="Peach" data-description="Princesa que veste rosa. Governa o Reino dos Cogumelos.">
+                    <img src="./src/imagens/100px-SMP_Icon_Peach.png" alt="Personagem Peach">
+                </li>
+                <li class="personagem" id="Daisy" data-name="Daisy" data-description="A governante de Sarasaland adora a emoção da aventura.">
+                    <img src="./src/imagens/100px-SMP_Icon_Daisy.png" alt="Personagem Daisy">
+                </li>
+                <li class="personagem" id="Rosalina" id="Peach" data-name="Rosalina" data-description="Observadora interestelar, protetora dos Lumas e amiga de Mario.">
+                    <img src="./src/imagens/100px-SMP_Icon_Rosalina.png" alt="Personagem Rosalina">
+                </li>
+                <li class="personagem" id="Yoshi" data-name="Yoshi" data-description="É o fiel corcel de Mario, vindo da Ilha Yoshi. Possui uma língua muito grudenta.">
+                    <img src="./src/imagens/100px-SMP_Icon_Yoshi.png" alt="Personagem Yoshi">
+                </li>
+                <li class="personagem" id="DK" data-name="Donkey Kong" data-description="Adora se aventurar pela selva. Usa uma gravata elegante.">
+                    <img src="./src/imagens/100px-SMP_Icon_DK.png" alt="Personagem DK">
+                </li>
+                <li class="personagem" id="Diddy" data-name="Diddy Kong" data-description="Ele parece inofensivo, mas na verdade é muito astuto.">
+                    <img src="./src/imagens/100px-SMP_Icon_Diddy.png" alt="Personagem Diddy">
+                </li>
+                <li class="personagem" id="Goomba" data-name="Goomba" data-description="Ele é a linha de frente de ataque do Bowser.">
+                    <img src="./src/imagens/100px-SMP_Icon_Goomba.png" alt="Personagem Goomba">
+                </li>
+                <li class="personagem" id="Shy-Guy" data-name="Shy Guy" data-description="Ele é um patife mascarado. Sempre parece estar no caminho.">
+                    <img src="./src/imagens/100px-SMP_Icon_Shy_Guy.png" alt="Personagem Shy Guy">
+                </li>
+                <li class="personagem" id="Hammer-Bro" data-name="Hammer Bro" data-description="Ele é um membro de elite da Tropa Koopa do Bowser. Ele usa um capacete.">
+                    <img src="./src/imagens/100px-SMP_Icon_Hammer_Bro.png" alt="Personagem Hammer Bro">
+                </li>
+                <li class="personagem" id="Koopa-Troopa" data-name="Koopa Troopa" data-description="Ele é o causador de problemas do Reino dos Cogumelos. Carrega sua casa nas costas.">
+                    <img src="./src/imagens/100px-SMP_Icon_Koopa.png" alt="Personagem Koopa Troopa">
+                </li>
+                <li class="personagem" id="Bowser-Jr" data-name="Bowser Jr" data-description="Ele é filho do Bowser. Um verdadeiro mestre em causar problemas.">
+                    <img src="./src/imagens/100px-SMP_Icon_Jr.png" alt="Personagem Bowser Jr.">
+                </li>
+                <li class="personagem" id="Bowser" data-name="Bowser" data-description="O chefão. Rei dos Koopas. Possui uma força monstruosa e um hálito ainda mais monstruoso.">
+                    <img src="./src/imagens/100px-SMP_Icon_Bowser.png" alt="Personagem Bowser">
+                </li>
+                <li class="personagem" id="Wario" data-name="Wario" data-description="Esse é um sujeito rude e grosseiro, gosta de se gabar...">
+                    <img src="./src/imagens/100px-SMP_Icon_Wario.png" alt="Personagem Wario">
+                </li>
+                <li class="personagem" id="Waluigi" data-name="Waluigi" data-description="O parceiro de Wario e o maior rival de Luigi (pelo menos é o que ele pensa).">
+                    <img src="./src/imagens/100px-SMP_Icon_Waluigi.png" alt="Personagem Waluigi">
+                </li>
+            </ul>
+        </section>
+        <section class="personagem-selecionado">
+            <img class="personagem-grande" src="./src/imagens/Card-Mario.png" alt="Personagem Selecionado">
+
+            <div class="informacoes-personagem">
+                <h2 class="nome-personagem" id="nome-personagem">Mario</h2>
+                <p class="descricao-personagem" id="descricao-personagem">Alegre. Inspirador. Saltitante. Todo mundo ama
+                    o Mario - e por um bom motivo!
+                </p>
+            </div>
+        </section>
+    </main>
+    <script src="./src/js/index.js"></script>
+</body>
+
+</html>
